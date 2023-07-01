@@ -22,9 +22,10 @@ const Card = ({ name, username, id, email }) => {
         <img style={{width: "100%", height:"100%"}} src="./images/doctor.jpg" alt={"Dr." + name}/>
         <h5>{email}</h5>
         
-        <button onClick={addFav} className="favButton">Add fav</button>
+        <button onClick={addFav} className="favButton">Add ★</button>
     </div>
   );
+
 };
 
 export default Card;

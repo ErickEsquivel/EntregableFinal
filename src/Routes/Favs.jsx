@@ -17,6 +17,7 @@ const Favs = () => {
       </div>
     </>
   );
+  
 };
 
 export default Favs;

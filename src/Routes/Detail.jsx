@@ -19,7 +19,7 @@ const Detail = () => {
         })
     }, [])
 
-    
+
     const dentista = pageState.dentista
     console.log(dentista);
 
@@ -32,6 +32,7 @@ const Detail = () => {
       <p>Website: {dentista.website}</p>      
       </>
   )
+  
 }
 
 export default Detail

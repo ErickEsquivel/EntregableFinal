@@ -19,7 +19,9 @@ const initialPageState = () => {
       color: 'white' 
       },
       dentistas: [],
-      dentista: {}
+      dentista: {},
+      favs: []
+      
     }
   }
   
@@ -32,6 +34,9 @@ const pageReducer = (state, action) => {
     case "SWITCH_THEME":
       const newState = {
         ...state,
+        dentistas: state.dentistas,
+        favs: state.favs,
+        dentista: state.dentista,
         theme: !state.theme,
         themeDetails: {
           background: state.theme ? "black" : "white",
@@ -69,5 +74,6 @@ export const ContextProvider = ({ children }) => {
       {children}
     </ContextGlobal.Provider>
   );
+  
 };
 export const usePage = () => useContext(ContextGlobal)

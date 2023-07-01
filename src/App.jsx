@@ -19,6 +19,7 @@ function App() {
       <div className={`app ${appClassName}`}>
         <Navbar />
         <Routes>
+          <Route path="" element={<Home/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/dentista/:id" element={<Detail/>} />
           <Route path="/favs" element={<Favs/>} />

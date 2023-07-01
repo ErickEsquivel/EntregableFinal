@@ -31,11 +31,12 @@ const Navbar = () => {
             </li>       
         </ul>
       </div>
-      
+
       <button onClick={switchTheme}>Cambiar Tema</button>
     </nav>
     
   )
+  
 }
 
 export default Navbar
